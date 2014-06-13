@@ -3,12 +3,12 @@ google.maps.event.addDomListener(window, 'load', initialize);
  function initialize() {
         var mapOptions = {
           zoom: 12,
-          center: new google.maps.LatLng(38.8935965,-77.014576);
+          center: new google.maps.LatLng(38.8935965,-77.014576)
           }
         var map = new google.maps.Map(document.getElementById('map-canvas'),
           mapOptions);
 
-        setMarkers(map, musicSites)
+        setMarkers(map, musicSites);
       } 
 
 /**
@@ -46,12 +46,12 @@ function setMarkers(map, locations) {
   // the Y direction down.
   var image = {
     url: 'images/map-marker-2.png',
-    // This marker is 20 pixels wide by 20 pixels tall.
-    size: new google.maps.Size(20, 20),
+    // This marker is 21 pixels wide by 30 pixels tall.
+    size: new google.maps.Size(21, 30),
     // The origin for this image is 0,0.
     origin: new google.maps.Point(0,0),
     // The anchor for this image is the base of the map-marker at 0,30.
-    anchor: new google.maps.Point(0, 20)
+    anchor: new google.maps.Point(0, 30)
   };
 
   // Shapes define the clickable region of the icon.
